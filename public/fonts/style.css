@@ -1,0 +1,36 @@
+/* @font-face {
+  font-family: "Mulish";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/Mulish-Regular.woff2) format("woff2");
+} */
+/* @font-face {
+  font-family: 'Italian No1';
+  src: url('ItalianNo1-Black.eot');
+  src: url('ItalianNo1-Black.woff2') format('woff2'), url('ItalianNo1-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: "Mulish";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("Mulish"), url(/fonts/Mulish-Medium.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local("Mulish"), url(/fonts/Mulish-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local("Mulish"), url(/fonts/Mulish-SemiBold.ttf) format("ttf");
+} */

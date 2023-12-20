@@ -1,0 +1,33 @@
+{
+  "name": "teknix-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "next": "11.0.1",
+    "next-themes": "^0.0.15",
+    "react": "17.0.2",
+    "react-dom": "latest",
+    "react-icons": "^4.2.0",
+    "react-input-slider": "^6.0.1",
+    "react-multi-carousel": "^2.6.3",
+    "react-radio-buttons": "^1.2.2",
+    "styled-components": "^5.3.0",
+    "swiper": "^6.7.5",
+    "tailwindcss-text-indent": "^1.0.2",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}

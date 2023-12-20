@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&display=swap");
+:root {
+  --width-btn: calc(100% - 32px);
+  --width-content-dash: calc(100% - 320px);
+  --body: #1e124f;
+  --col: #352a61;
+  --standard: #7ce0ff;
+  --enterprise: #ba91ff;
+  --btn-trial: #4e4474;
+  --premium-to: #fc5185;
+  --premium-from: #ffbd90;
+  --bg-from: #1e124f;
+  --bg-to: #0c0b1f;
+  --btn-deploy-from: #02c6f0;
+  --btn-deploy-to: #187ffa;
+  --btn-join-from: #f95187;
+  --btn-join-to: #693de5;
+  --color-primary: #1d53da;  
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  cursor: pointer;
+}
+/* navigation slider */
+/* .swiper-button-next::after {
+  display: none;
+} */
+.swiper-button-next,
+.swiper-button-prev {
+  /* background-image: url(/img/arr-right.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center; */
+  color: white !important;
+}
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-next:after {
+  font-size: 2rem !important;
+}
+
+@layer base {
+  /* toggle switch */
+  .input-switch:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: var(--color-primary);
+  }
+  .input-switch:checked ~ .switch-bg {
+    @apply bg-blue-200;
+  }
+
+  body {
+    font-family: "Mulish";
+    @apply bg-gray-50 text-black dark:bg-gray-800 dark:text-white;
+  }
+  .btn-absolute {
+    @apply text-white;
+    width: var(--width-btn);
+  }
+  .w-dashboard {
+    width: var(--width-content-dash);
+  }
+  /* Tuyen */
+  .btnSub {
+    @apply mt-auto bg-indigo-700 text-white w-full p-4 rounded-full;
+  }
+  .inputTx {
+    @apply text-base text-gray-700 w-full h-12 border-b focus:outline-none focus:border-indigo-700;
+  }
+  .titleFr {
+    @apply text-4xl font-bold mb-10;
+  }
+  .titleVps {
+    @apply text-black text-opacity-80 text-clampLg font-bold px-4 py-5;
+  }
+
+  /* tinh home */
+  .more:hover + .menu-dashboard {
+    display: none;
+  }
+
+  .bg-body {
+    background-color: var(--body);
+  }
+  .bg-gradient-home {
+    background-image: linear-gradient(to top, var(--bg-from), var(--bg-to));
+  }
+  .bg-col {
+    background-color: var(--col);
+  }
+  .bg-standard {
+    background-color: var(--standard);
+  }
+  .bg-enterprise {
+    background-color: var(--enterprise);
+  }
+  .btn-trial {
+    background-color: var(--btn-trial);
+  }
+  .bg-premium {
+    background-image: linear-gradient(
+      to right,
+      var(--premium-from),
+      var(--premium-to)
+    );
+  }
+  .btn-deploy {
+    @apply w-60 mb-4 mx-auto rounded-full leading-13;
+    background-image: linear-gradient(
+      to right,
+      var(--btn-deploy-from),
+      var(--btn-deploy-to)
+    );
+  }
+  .btn-join {
+    background-image: linear-gradient(
+      to right,
+      var(--btn-join-from),
+      var(--btn-join-to)
+    );
+  }
+  .banner {
+    @apply bg-center bg-cover w-full h-screen text-white text-center flex items-center py-10 z-10;
+  }
+  .headtitle {
+    @apply text-4xl font-bold my-8;
+  }
+
+  .wave {
+    @apply h-36 max-w-screen-lg bg-cover;
+  }
+  .join {
+    @apply h-20 w-full bg-col rounded-2xl flex;
+  }
+}
